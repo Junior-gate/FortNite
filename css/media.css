@@ -1,0 +1,33 @@
+@media (max-width: 1050px) {
+  .footer__payment {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding: 17px 0 30px;
+  }
+  .footer__text {
+    margin: 8px 0 12px;
+  }
+  .footer__agreement-link {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo__img {
+    width: 170px;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
+  .footer__political-link, .footer__agreement-link {
+    font-size: 10px;
+  }
+}

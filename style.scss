@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800);
+
+
+body {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.22;
+    font-family: Montserrat;
+}
+
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+$bg-light: #A374E8;
+
+.footer {
+    background-color: $bg-light;
+    padding: 42px 0 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        margin: 17px 0 20px;
+    }
+
+    &__political-link {
+        margin-right: 20px;    
+    }
+    &__political-link,
+    &__agreement-link {
+        font-size: 14px;
+        line-height: 1.2;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        transition: all .3s;
+    }
+
+    &__political-link:hover,
+    &__agreement-link:hover{
+        color: #65DFEA;
+        border-bottom: 1px solid #65DFEA;
+        text-shadow: 0px 0px 10px #65DFEA;
+    }
+
+    &__payment-text {
+        margin-bottom: 8px;
+    }
+
+    &__payment-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
