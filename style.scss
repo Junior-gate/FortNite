@@ -1,0 +1,177 @@
+/* Шрифты */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800);
+
+/* vars */
+$bg-light: rgba(164, 115, 232, 1);
+$bg: linear-gradient(90deg, rgba(37, 21, 88, 0.2) 0%, rgba(147, 111, 221, 0.2) 100%),
+#26155B;
+
+body {
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 20px;
+}
+
+
+/* Ограничивающий контейнер */
+.container {
+	max-width: 1690px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/* Повторяющиеся стили */
+.title {
+	font-weight: 800;
+	font-size: 50px;
+	line-height: 1.6;
+	padding-bottom: 9px;
+	border-bottom: 4px #65DFEA solid;
+	border-radius: 4px;
+}
+
+.news {
+	background: $bg;
+
+	&__main {
+		padding-top: 52px;
+	}
+}
+
+
+/* breadcrumb Ссылки на страницы предыдущая/текущая */
+.breadcrumb {
+	margin-bottom: 50px;
+
+	&__list {
+		display: flex;
+		margin-bottom: 20px;
+
+		li {
+			position: relative;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 1.2;
+
+			+li {
+				margin-left: 10px;
+			}
+
+			a {
+				color: inherit;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&:not(:first-child) {
+				padding-left: 12px;
+
+				&::before {
+					// content: "→";
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0px;
+					transform: translate(0, -50%);
+					width: 5px;
+					height: 5px;
+					background-color: #fff;
+					border-radius: 50%;
+
+				}
+			}
+		}
+
+	}
+
+	&__link {
+		&--current {
+			color: #65DFEA;
+		}
+	}
+}
+
+.btn-prev-page {
+	padding-left: 56px;
+	position: relative;
+	cursor: pointer;
+	transition: all .3s ease-out;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 40px;
+		height: 15px;
+		top: 50%;
+		left: 0;
+		transform: translate(0, -50%);
+		background-image: url(".././images/icons/Arrow-prev.svg");
+		background-repeat: no-repeat;
+		transition: all .3s ease-out;
+
+	}
+
+	&:hover {
+		&::before {
+			transform: translate(5px, -50%);
+		}
+	}
+}
+
+
+
+.news-articles {
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 54px 20px;
+		padding-bottom: 117px;
+	}
+
+}
+
+.article {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	background-color: $bg-light;
+	padding: 0 0 9px 40px;
+
+	picture {
+		transition: all .3s ease-out;
+	}
+
+	&__img {
+		max-width: 100%;
+		margin-bottom: 7px;
+		overflow: hidden;
+		transition: all .3s ease-out;
+
+		img {
+			width: 100%;
+			transition: inherit;
+		}
+
+		&:hover {
+			cursor: pointer;
+
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		margin-top: auto;
+		padding-right: 17px;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 1.3;
+
+	}
+}
+
