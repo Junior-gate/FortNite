@@ -33,6 +33,12 @@
 			}
 		}
 	}
+
+	.card__title {
+		max-width: 500px;
+		font-size: 30px;
+		margin-right: 0;
+	}
 }
 
 @media (max-width:768px) {
@@ -60,6 +66,24 @@
 		font-size: 24px;
 		line-height: 29px;
 	}
+
+	.card__title {
+		font-size: 36px;
+	}
+
+	.footer {
+		padding: 17px 0 30px;
+
+		&__text {
+			margin: 8px 0 12px;
+		}
+
+		&__agreement-link {
+			display: block;
+			width: fit-content;
+			margin-top: 10px;
+		}
+	}
 }
 
 @media (max-width:450px) {
@@ -81,9 +105,11 @@
 }
 
 @media (max-width:340px) {
-	.title {
-		max-width: 250px;
+
+	.news-articles__title {
+		max-width: 180px;
 	}
+
 	.article {
 		&__text {
 			span {
