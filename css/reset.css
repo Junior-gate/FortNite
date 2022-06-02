@@ -23,7 +23,7 @@ html, body {
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 nav, footer, header, aside {
