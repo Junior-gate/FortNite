@@ -1,0 +1,153 @@
+.guarantees {
+   margin-top: 90px;
+
+   &__info {
+      margin-bottom: 54px;
+   }
+
+   &__title {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 34px;
+      text-transform: uppercase;
+   }
+
+   &__text {
+      font-weight: 500;
+      margin-bottom: 30px;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+
+      a {
+         color: #65DFEA;
+         text-decoration: underline;
+      }
+   }
+}
+
+.popular-offers {
+   margin-bottom: 50px;
+
+   &__title {
+      margin-bottom: 66px;
+   }
+
+   &__slide {
+      display: flex;
+      justify-content: center;
+      width: 273px;
+      height: 363px;
+   }
+
+   &__wrapper {
+      margin-bottom: 66px;
+      display: flex;
+      padding-left: 10px;
+   }
+
+   &__pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+         width: 20px;
+         height: 20px;
+         background-color: #fff;
+         transition: all .3s;
+      }
+
+      span.swiper-pagination-bullet {
+         opacity: .5;
+
+         &-active {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+
+
+.card-item {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: #4E3286;
+   border: 10px solid #A473E8;
+   border-radius: 22px;
+   width: 260px;
+   height: 352px;
+   position: relative;
+   color: #fff;
+
+   &:hover {
+      &::before {
+         box-shadow: 0px 0px 20px #65DFEA;
+      }
+   }
+
+   &::before {
+      content: '';
+      width: 260px;
+      height: 352px;
+      background-color: #4E3286;
+      border-radius: 22px;
+      position: absolute;
+      left: -23px;
+      bottom: -22px;
+      z-index: -1;
+      transition: all .3s;
+   }
+
+   &__box {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 12px 0 9px 10px;
+      height: 100%;
+
+      &:hover {
+         .card-item__img {
+            transform: scale(1.07);
+         }
+      }
+   }
+
+   &__elipse {
+      background-image: url(/images/icons/elipse-bg.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+      width: 186px;
+      height: 186px;
+      position: absolute;
+      bottom: 58px;
+      right: 17px;
+   }
+
+
+   &__img {
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+      pointer-events: none;
+      transition: all .3s ease-out;
+
+      img {
+         max-width: 285px;
+         max-height: 285px;
+      }
+   }
+
+   &__name,
+   &__price {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 800;
+   }
+}

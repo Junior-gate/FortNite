@@ -31,7 +31,5 @@ const swiper = new Swiper('.popular-offers__slider', {
          spaceBetween: 55,
          slideToClickedSlide: true,
       }
-
    }
-
 });

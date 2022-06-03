@@ -1,28 +1,13 @@
-@media (max-width: 1050px) {
-   .footer {
-      &__payment {
-         display: none;
-      }
-   }
-}
-
 @media (max-width: 768px) {
-
-   .title {
-      font-size: 36px;
-   }
-
-   .breadcrumb {
-      display: none;
-   }
 
    .guarantees {
       margin-top: 47px;
-      &__info{
+
+      &__info {
          margin-bottom: 47px;
       }
    }
-   
+
 
    .popular-offers {
       &__slide {
@@ -54,11 +39,8 @@
    }
 }
 
-@media (max-width: 560px) {
 
-   .title {
-      font-size: 24px;
-   }
+@media (max-width: 560px) {
 
    .guarantees {
       &__title {
@@ -122,26 +104,9 @@
          height: 105px;
       }
    }
-
-   .footer {
-      padding: 17px 0 30px;
-
-      &__text {
-         margin: 8px 0 12px;
-      }
-
-      &__agreement-link {
-         display: block;
-         width: fit-content;
-         margin-top: 10px;
-      }
-   }
 }
 
 @media (max-width: 400px) {
-   .logo__img {
-      width: 170px;
-   }
 
    .guarantees {
       &__text {
@@ -158,15 +123,5 @@
          font-size: 16px;
       }
    }
-
-   .footer {
-      &__text {
-         font-size: 12px;
-      }
-
-      &__political-link,
-      &__agreement-link {
-         font-size: 10px;
-      }
-   }
 }
+

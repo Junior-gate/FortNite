@@ -1,0 +1,39 @@
+
+@media (max-width: 1050px) {
+   .footer {
+      &__payment {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 560px) {
+
+   .footer {
+      padding: 17px 0 30px;
+
+      &__text {
+         margin: 8px 0 12px;
+      }
+
+      &__agreement-link {
+         display: block;
+         width: fit-content;
+         margin-top: 10px;
+      }
+   }
+}
+
+@media (max-width: 400px) {
+
+   .footer {
+      &__text {
+         font-size: 12px;
+      }
+
+      &__political-link,
+      &__agreement-link {
+         font-size: 10px;
+      }
+   }
+}

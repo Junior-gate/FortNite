@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* Шрифты */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800);
+body {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.22;
+  font-family: Montserrat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(37, 21, 88, 0.2)), to(rgba(147, 111, 221, 0.2))), #26155B;
+  background: linear-gradient(90deg, rgba(37, 21, 88, 0.2) 0%, rgba(147, 111, 221, 0.2) 100%), #26155B;
+}
+
+/* Ограничивающий контейнер */
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Заголовок */
+.title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1.1;
+  padding-bottom: 9px;
+  border-bottom: 4px #65DFEA solid;
+  border-radius: 4px;
+}
+
+/* Хлебные крошки(ввернутся назад на страницу) */
+.breadcrumb {
+  margin-top: 50px;
+}
+
+.breadcrumb__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.breadcrumb__list li {
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.breadcrumb__list li + li {
+  margin-left: 10px;
+}
+
+.breadcrumb__list li a {
+  color: inherit;
+}
+
+.breadcrumb__list li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb__list li:not(:first-child) {
+  padding-left: 12px;
+}
+
+.breadcrumb__list li:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.breadcrumb__link {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.breadcrumb__link:hover {
+  color: #65DFEA;
+}
+
+.breadcrumb__link--current {
+  color: #65DFEA;
+}
+
+.btn-prev-page {
+  padding-left: 56px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.btn-prev-page::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 15px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url(".././images/icons/Arrow-prev.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.btn-prev-page:hover::before {
+  -webkit-transform: translate(5px, -50%);
+          transform: translate(5px, -50%);
+}
+
+/* global media */
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  .breadcrumb {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo__img {
+    width: 170px;
+  }
+}
