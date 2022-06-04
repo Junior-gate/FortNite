@@ -1,1 +1,253 @@
-/* No CSS */
+@media (max-width: 1700px) {
+  .catalog__nav-btn, .catalog__nav-all {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .intro__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro__info {
+    margin-bottom: 60px;
+  }
+  .intro__giveaway {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro {
+    background-image: url("../images/index/decor-polygon-mob.svg");
+  }
+  .intro__giveaway {
+    height: 450px;
+  }
+  .intro__giveaway-title {
+    font-size: 26px;
+  }
+  .intro__giveaway-img {
+    display: none;
+  }
+  .intro__giveaway-timer {
+    margin: 0 auto;
+  }
+  .intro__giveaway-time {
+    width: 250px;
+    position: initial;
+    margin-top: 28px;
+  }
+  .intro__giveaway-btn {
+    width: 250px;
+    padding: 9px 10px;
+    font-size: 24px;
+  }
+  .catalog__nav {
+    display: none;
+  }
+  .catalog__menu {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .catalog__items-inner {
+    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 60px 0;
+  }
+  .intro__info-title {
+    font-size: 30px;
+  }
+  .intro__info-slider {
+    display: none;
+  }
+  .intro__giveaway {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 6px solid #A473E8;
+    padding: 12px 20px 0 12px;
+  }
+  .intro__giveaway-info {
+    font-size: 18px;
+    padding-left: 42px;
+  }
+  .intro__giveaway-info + p {
+    margin-top: 30px;
+  }
+  .intro__giveaway-info span {
+    font-size: 20px;
+    margin-top: 7px;
+  }
+  .intro__giveaway-info::before {
+    background-image: url("../images/icons/circle-mob.svg");
+    width: 30px;
+    height: 30px;
+    top: -5px;
+  }
+  .intro__giveaway-title {
+    font-size: 20px;
+  }
+  .guarantees {
+    margin-top: 47px;
+  }
+  .guarantees__info {
+    margin-bottom: 47px;
+  }
+  .popular-offers__slide {
+    height: 300px;
+  }
+  .card-item {
+    width: 230px;
+    height: 300px;
+    border: 6px solid #A473E8;
+  }
+  .card-item::before {
+    width: 240px;
+    height: 300px;
+  }
+  .card-item__img img {
+    max-width: 235px;
+    max-height: 245px;
+  }
+  .card-item__name, .card-item__price {
+    font-size: 20px;
+  }
+  .catalog {
+    padding-bottom: 40px;
+  }
+  .catalog__inner {
+    margin-bottom: 40px;
+  }
+  .catalog__items-inner {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .guarantees__title {
+    margin-bottom: 20px;
+  }
+  .popular-offers__title {
+    margin-bottom: 30px;
+  }
+  .popular-offers__slide {
+    height: 180px;
+  }
+  .popular-offers__pagination span {
+    width: 15px;
+    height: 15px;
+  }
+  .card-item {
+    width: 132px;
+    height: 180px;
+  }
+  .card-item::before {
+    width: 132px;
+    height: 180px;
+    bottom: -12px;
+    left: -12px;
+  }
+  .card-item__img img {
+    max-width: 145px;
+    max-height: 145px;
+  }
+  .card-item__elipse {
+    width: 95px;
+    height: 95px;
+    bottom: 38px;
+    right: 15px;
+  }
+  .card-item__name, .card-item__price {
+    font-size: 12px;
+  }
+  .small-img img {
+    width: 105px;
+    height: 105px;
+  }
+  .catalog__items-inner {
+    -ms-grid-columns: (minmax(140px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 30px 20px;
+  }
+  .catalog__btn {
+    width: 248px;
+    height: 39px;
+    font-size: 16px;
+  }
+  .catalog__btn-anchor {
+    width: 139px;
+    height: 39px;
+    font-size: 16px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .intro {
+    padding: 60px 0;
+  }
+  .intro__info {
+    margin-bottom: 30px;
+  }
+  .intro__info-title {
+    font-size: 24px;
+  }
+  .intro__info-text {
+    font-size: 12px;
+  }
+  .intro__giveaway {
+    max-width: 400px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    padding: 12px 20px 20px 12px;
+  }
+  .intro__giveaway-title {
+    font-size: 14px;
+    margin-bottom: 25px;
+    max-width: 200px;
+  }
+  .intro__giveaway-info {
+    font-size: 12px;
+    padding-left: 42px;
+  }
+  .intro__giveaway-info span {
+    font-size: 14px;
+  }
+  .intro__giveaway-time {
+    font-size: 20px;
+    height: 40px;
+  }
+  .intro__giveaway-btn {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .guarantees__text {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .popular-offers {
+    margin-bottom: 30px;
+  }
+  .popular-offers__title {
+    font-size: 16px;
+  }
+}

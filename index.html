@@ -12,17 +12,15 @@
    <link rel="stylesheet" href="css/index.css">
    <link rel="stylesheet" href="css/index-media.css">
 
+
 </head>
 
 <body>
 
-
-   <section class="intro">
+   <section class="intro" id="scrollUp">
       <div class="container">
-
-         <div class="into__inner">
+         <div class="intro__inner">
             <div class="intro__info">
-
                <h1 class="intro__info-title">Официальный магазин скинов Фортнайт</h1>
                <p class="intro__info-text">
                   Магазин скиной Фортнайт, гарантия доставки 100%.
@@ -35,24 +33,28 @@
                   <!-- Slider main container -->
                   <div class="intro__info-swiper swiper">
                      <!-- Additional required wrapper -->
-                     <div class="intro__info--wrapper swiper-wrapper">
+                     <div class="intro__info-wrapper swiper-wrapper">
                         <!-- Slides -->
                         <div class="intro__info-slide swiper-slide">
                            <div class="intro__info-item">
-                              <img class="intro__info-img" src="/images/index/slider-image1.jpg" alt="slider-image">
-                              <div class="intro__info-name">Акции</div>
+                              <a class="intro__info-link" href="#">
+                                 <img class="intro__info-img" src="/images/index/slider-image1.jpg" alt="slider-image">
+                                 <div class="intro__info-name">Акции</div>
+                              </a>
                            </div>
+                        </div>
 
+                        <div class="intro__info-slide swiper-slide">
                            <div class="intro__info-item">
-                              <img class="intro__info-img" src="/images/index/slider-image1.jpg" alt="slider-image">
-                              <div class="intro__info-name">Предложения</div>
+                              <a class="intro__info-link" href="#">
+                                 <img class="intro__info-img" src="/images/index/slider-image1.jpg" alt="slider-image">
+                                 <div class="intro__info-name">Популярные товары</div>
+                              </a>
                            </div>
                         </div>
                      </div>
-
                      <div class="intro__info-pagination swiper-pagination"></div>
                   </div>
-
                </div>
             </div>
 
@@ -64,21 +66,324 @@
                   <p class="intro__giveaway-info">Вчерашний победитель:
                      <span>igor@**il.com</span>
                   </p>
-                  <button class="intro__giveaway-btn">Участвовать</button>
                </div>
 
                <div class="intro__giveaway-timer">
-                  <div class="intro__giveaway-time"></div>
-
+                  <div class="intro__giveaway-time"> 04:33:21</div>
+                  <a href="#" class="intro__giveaway-btn">Участвовать</a>
                   <img class="intro__giveaway-img" src="/images/index/b-cash.png" alt="b-cash">
                </div>
-
             </div>
          </div>
-
       </div>
    </section>
 
+
+
+   <section class="catalog">
+      <div class="container">
+         <div class="catalog__inner">
+            <div class="catalog__nav">
+               <button class="catalog__nav-all catalog-all">все</button>
+               <button class="catalog__nav-btn">Спец.предложения</button>
+               <button class="catalog__nav-btn b-cash-hover">в-баксы</button>
+               <button class="catalog__nav-btn">скины</button>
+               <button class="catalog__nav-btn">боевой пропуск</button>
+               <button class="catalog__nav-btn">дельтаплан</button>
+               <button class="catalog__nav-btn">эмоции</button>
+               <input class="catalog__nav-search catalog-search" placeholder="поиск" type="search"></input>
+               <button class="catalog__nav-btn">кирки</button>
+               <button class="catalog__nav-btn">комплекты</button>
+            </div>
+
+            <div class="catalog__menu">
+               <div class="catalog__menu-box">
+                  <input class="catalog__menu-search catalog-search" placeholder="поиск" type="search"></input>
+                  <div class="menu-all-dropdown">
+                     <p class="catalog__menu-all menu-all-holder  catalog-all ">все</p>
+                  </div>
+                  <button class="catalog__menu-toggle">
+                     <img class="catalog__menu-img" src="/images/icons/menu-btn.svg" alt="menu-icon">
+                  </button>
+                  <ul class="catalog__menu-list menu-list-option">
+                     <li class="catalog__menu-btn">Все</li>
+                     <li class="catalog__menu-btn">Спец.предложения</li>
+                     <li class="catalog__menu-btn">в-баксы</li>
+                     <li class="catalog__menu-btn">скины</li>
+                     <li class="catalog__menu-btn">боевой пропуск</li>
+                     <li class="catalog__menu-btn">дельтаплан</li>
+                     <li class="catalog__menu-btn">эмоции</li>
+                     <li class="catalog__menu-btn">кирки</li>
+                     <li class="catalog__menu-btn">комплекты</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="catalog__products">
+               <div class="catalog__items-inner">
+
+                  <a class="catalog__item card-item" href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">Джон Уик</p>
+                        <div class="card-item__img">
+                           <img src="/images/product-characters/John-Wick.png" alt="john-wick">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item" href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">Какаши</p>
+                        <div class="card-item__img">
+                           <img src="/images/product-characters/kakashi.png" alt="kakashi">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item" href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">снегобой</p>
+                        <div class="card-item__img">
+                           <img src="/images/product-characters/snowboy.png" alt="snow-boy">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item " href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">в-баксы</p>
+                        <div class="card-item__img small-img">
+                           <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item " href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">в-баксы</p>
+                        <div class="card-item__img small-img">
+                           <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item" href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">Джон Уик</p>
+                        <div class="card-item__img">
+                           <img src="/images/product-characters/John-Wick.png" alt="john-wick">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item" href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">Какаши</p>
+                        <div class="card-item__img">
+                           <img src="/images/product-characters/kakashi.png" alt="kakashi">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item" href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">снегобой</p>
+                        <div class="card-item__img">
+                           <img src="/images/product-characters/snowboy.png" alt="snow-boy">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item" href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">в-баксы</p>
+                        <div class="card-item__img  small-img">
+                           <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+
+                  <a class="catalog__item card-item " href="#">
+                     <div class="card-item__box">
+                        <div class="card-item__elipse"></div>
+                        <p class="card-item__name">в-баксы</p>
+                        <div class="card-item__img small-img">
+                           <img src="/images/product-characters/b-cash.png" alt="b-cash" media>
+                        </div>
+                        <p class="card-item__price">599 р</p>
+                     </div>
+                  </a>
+               </div>
+               <button class="catalog__btn">Показать все товары</button>
+            </div>
+
+         </div>
+
+         <div class="popular-offers">
+            <h2 class="popular-offers__title title">Популярные предложения</h2>
+
+            <!-- Slider main container -->
+            <div class="popular-offers__slider swiper ">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper popular-offers__wrapper">
+                  <!-- Slides -->
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">Джон Уик</p>
+                           <div class="card-item__img">
+                              <img src="/images/product-characters/John-Wick.png" alt="john-wick">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">Какаши</p>
+                           <div class="card-item__img">
+                              <img src="/images/product-characters/kakashi.png" alt="kakashi">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">снегобой</p>
+                           <div class="card-item__img">
+                              <img src="/images/product-characters/snowboy.png" alt="snow-boy">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">в-баксы</p>
+                           <div class="card-item__img small-img">
+                              <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">в-баксы</p>
+                           <div class="card-item__img small-img">
+                              <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">Джон Уик</p>
+                           <div class="card-item__img">
+                              <img src="/images/product-characters/John-Wick.png" alt="john-wick">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">Какаши</p>
+                           <div class="card-item__img">
+                              <img src="/images/product-characters/kakashi.png" alt="kakashi">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">снегобой</p>
+                           <div class="card-item__img">
+                              <img src="/images/product-characters/snowboy.png" alt="snow-boy">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">в-баксы</p>
+                           <div class="card-item__img small-img">
+                              <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="popular-offers__slide swiper-slide ">
+                     <a class="popular-offers__item card-item" href="#">
+                        <div class="card-item__box">
+                           <div class="card-item__elipse"></div>
+                           <p class="card-item__name">в-баксы</p>
+                           <div class="card-item__img small-img">
+                              <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                           </div>
+                           <p class="card-item__price">599 р</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="popular-offers__pagination swiper-pagination"></div>
+            </div>
+
+         </div>
+
+         <a href="#scrollUp" class="pure-scroll"><button class="catalog__btn-anchor">Наверх</button></a>
+
+      </div>
+   </section>
 
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/main.js"></script>
