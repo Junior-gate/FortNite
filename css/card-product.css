@@ -119,8 +119,6 @@
   width: 200px;
   height: 55px;
   background: #65DFEA;
-  -webkit-box-shadow: 0px 0px 20px #65DFEA;
-          box-shadow: 0px 0px 20px #65DFEA;
   border-radius: 6px;
   font-weight: 800;
   font-size: 30px;
@@ -131,11 +129,16 @@
   transition: all .3s ease-out;
 }
 
-.card__btn-buy:hover, .card__btn-buy:focus {
-  -webkit-box-shadow: 0px 0px 25px #65DFEA;
-          box-shadow: 0px 0px 25px #65DFEA;
+.card__btn-buy:hover {
+  -webkit-box-shadow: 0px 0px 20px #65DFEA;
+          box-shadow: 0px 0px 20px #65DFEA;
   background: #63d7e1;
   color: #ececec;
+}
+
+.card__btn-buy:active {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .card__price {
