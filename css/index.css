@@ -593,3 +593,28 @@
 .popular-offers__pagination span.swiper-pagination-bullet-active {
   opacity: 1;
 }
+
+.description {
+  padding: 100px 0 190px;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 38px;
+}
+
+.description__text {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.description__text span {
+  color: #65DFEA;
+  text-decoration: underline;
+}
+
+.description__text:last-child {
+  margin-bottom: 0;
+}

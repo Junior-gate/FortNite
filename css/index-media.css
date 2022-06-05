@@ -195,6 +195,17 @@
     font-size: 16px;
     margin-top: 0px;
   }
+  .description {
+    padding: 36px 0 43px;
+  }
+  .description__title {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+  .description__text {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 450px) {

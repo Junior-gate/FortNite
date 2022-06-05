@@ -486,3 +486,27 @@
       }
    }
 }
+
+
+.description {
+   padding: 100px 0 190px;
+
+   &__title {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 38px;
+   }
+
+   &__text {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 30px;
+      span{
+         color: #65DFEA;
+         text-decoration: underline;
+      }
+      &:last-child{
+         margin-bottom: 0;
+      }
+   }
+}
