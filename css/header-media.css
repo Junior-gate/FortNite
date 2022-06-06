@@ -89,6 +89,9 @@
 }
 
 @media (max-width: 530px) {
+  .header {
+    height: 60px;
+  }
   .header__logo img {
     max-width: 300px;
   }

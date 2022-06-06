@@ -115,6 +115,8 @@
 
 @media (max-width:530px) {
 	.header {
+		height: 60px;
+
 		&__logo {
 			img {
 				max-width: 300px;

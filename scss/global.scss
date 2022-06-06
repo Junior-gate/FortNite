@@ -7,6 +7,7 @@ body {
 	line-height: 1.22;
 	font-family: Montserrat;
 	background: linear-gradient(90deg, rgba(37, 21, 88, 0.2) 0%, rgba(147, 111, 221, 0.2) 100%), #26155B;
+	padding-top: 90px;
 }
 
 /* Ограничивающий контейнер */
@@ -134,6 +135,9 @@ body {
 
 
 @media (max-width: 560px) {
+	body {
+		padding-top: 60px;
+	}
 
 	.title {
 		font-size: 24px;
