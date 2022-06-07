@@ -383,7 +383,7 @@ body {
 }
 
 .card-item__elipse {
-	background-image: url(/images/icons/elipse-bg.svg);
+	background-image: url("../images/icons/elipse-bg.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 0;
