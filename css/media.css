@@ -48,6 +48,11 @@
   .popular-offers__title {
     margin-bottom: 30px;
   }
+
+  .popular-offers{
+    margin-bottom: 0;
+  }
+
   .popular-offers__slide {
     height: 180px;
   }
