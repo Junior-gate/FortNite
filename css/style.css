@@ -2003,6 +2003,7 @@ a {
 	padding: 8px 12px 8px 12px;
 	width: 140px;
 	text-align: left;
+
 }
 
 .catalog__menu-all::-webkit-input-placeholder,
@@ -2102,6 +2103,7 @@ a {
 	font-size: 14px;
 	text-transform: uppercase;
 	background-color: transparent;
+	cursor: pointer;
 }
 
 .catalog__menu-btn+.catalog__menu-btn {
@@ -2125,6 +2127,7 @@ a {
 	width: 466px;
 	height: 55px;
 	background: #65DFEA;
+	border-radius: 6px;
 	text-transform: uppercase;
 	color: #FFF;
 	font-weight: 800;
@@ -2352,6 +2355,7 @@ a {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.intro__info {
@@ -2359,7 +2363,15 @@ a {
 	}
 
 	.intro__giveaway {
-		margin-left: auto;
+		/* margin-left: auto; */
+	}
+
+	.catalog__nav {
+		display: none;
+	}
+
+	.catalog__menu {
+		display: block;
 	}
 }
 
@@ -2396,13 +2408,7 @@ a {
 		font-size: 24px;
 	}
 
-	.catalog__nav {
-		display: none;
-	}
 
-	.catalog__menu {
-		display: block;
-	}
 }
 
 @media (max-width: 900px) {
