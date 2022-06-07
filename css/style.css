@@ -102,6 +102,14 @@ body {
 	font-family: Montserrat;
 	background: -webkit-gradient(linear, left top, right top, from(rgba(37, 21, 88, 0.2)), to(rgba(147, 111, 221, 0.2))), #26155B;
 	background: linear-gradient(90deg, rgba(37, 21, 88, 0.2) 0%, rgba(147, 111, 221, 0.2) 100%), #26155B;
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 /* Ограничивающий контейнер */
@@ -234,11 +242,14 @@ body {
 	.logo__img {
 		width: 170px;
 	}
+
+	.title {
+		font-size: 20px;
+	}
 }
 
-
 .guarantees {
-	margin-top: 90px;
+	margin-top: 70px;
 }
 
 .guarantees__info {
@@ -417,7 +428,7 @@ body {
 
 @media (max-width: 768px) {
 	.guarantees {
-		margin-top: 47px;
+		margin-top: 40px;
 	}
 
 	.guarantees__info {
@@ -504,13 +515,15 @@ body {
 }
 
 @media (max-width: 400px) {
+
+	.guarantees__title {
+		margin-bottom: 16px;
+		font-size: 20px;
+	}
+
 	.guarantees__text {
 		font-size: 16px;
 		margin-bottom: 25px;
-	}
-
-	.popular-offers {
-		margin-bottom: 30px;
 	}
 
 	.popular-offers__title {
@@ -520,6 +533,7 @@ body {
 
 
 .footer {
+	flex-shrink: 0;
 	background-color: #A473E8;
 	padding: 42px 0 50px;
 }
@@ -1521,7 +1535,7 @@ a {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 50px;
-	gap: 54px 20px;
+	gap: 40px 20px;
 	padding-bottom: 117px;
 }
 
@@ -1636,14 +1650,15 @@ a {
 		display: none;
 	}
 
-	.title {
-		font-size: 36px;
+	.news-articles__container-flex {
+		padding-bottom: 60px;
 	}
 
 	.news-articles__container {
-		padding-bottom: 60px;
 		gap: 30px 0px;
 	}
+
+
 
 	.article {
 		-webkit-box-flex: 1;
@@ -1653,9 +1668,14 @@ a {
 }
 
 @media (max-width: 560px) {
-	.title {
-		font-size: 24px;
-		line-height: 29px;
+
+	.news-articles__container-flex {
+		padding-bottom: 60px;
+		gap: 30px;
+	}
+
+	.news-articles__container-flex {
+		margin-top: 30px;
 	}
 
 	.card__title {
@@ -1685,12 +1705,13 @@ a {
 }
 
 @media (max-width: 450px) {
-	.news-articles__container {
-		padding-bottom: 26px;
-	}
 
 	.article {
-		padding: 0 0 4px 22px;
+		padding: 0 0 4px 18px;
+	}
+
+	.news-articles {
+		margin-top: 30px;
 	}
 
 	.article__text {
@@ -1700,9 +1721,6 @@ a {
 }
 
 @media (max-width: 340px) {
-	.news-articles__title {
-		max-width: 180px;
-	}
 
 	.article__text span {
 		display: none;
@@ -2481,10 +2499,6 @@ a {
 		font-size: 20px;
 	}
 
-	.guarantees {
-		margin-top: 47px;
-	}
-
 	.guarantees__info {
 		margin-bottom: 47px;
 	}
@@ -2539,9 +2553,6 @@ a {
 }
 
 @media (max-width: 560px) {
-	.guarantees__title {
-		margin-bottom: 20px;
-	}
 
 	.popular-offers__slide {
 		height: 180px;
@@ -2586,6 +2597,10 @@ a {
 		height: 105px;
 	}
 
+	.catalog__inner {
+		margin-bottom: 35px;
+	}
+
 	.catalog__items-inner {
 		-ms-grid-columns: (minmax(140px, 1fr))[auto-fit];
 		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -2623,7 +2638,7 @@ a {
 
 @media (max-width: 450px) {
 	.intro {
-		padding: 60px 0;
+		padding: 30px 0;
 	}
 
 	.intro__info {
@@ -2677,8 +2692,7 @@ a {
 }
 
 .reviews {
-	padding-top: 89px;
-	padding-bottom: 118px;
+	padding: 60px 0;
 }
 
 .reviews__title {
@@ -2697,7 +2711,7 @@ a {
 }
 
 .reviews__row+form {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .reviews__subtitle {
@@ -2819,7 +2833,7 @@ a {
 .reviews-comment {
 	padding: 22px 39px;
 	background: #7052AD;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .reviews-comment__heading {
@@ -2921,8 +2935,7 @@ a {
 
 @media (max-width: 768px) {
 	.reviews {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding: 50px 0 30px;
 	}
 
 	.reviews__title {
@@ -2970,12 +2983,12 @@ a {
 
 @media (max-width: 500px) {
 	.reviews {
-		padding-top: 30px;
+		padding-top: 20px;
 		padding-bottom: 15px;
 	}
 
 	.reviews__row+form {
-		margin-top: 23px;
+		margin-top: 20px;
 	}
 
 	.reviews__comment-value {
@@ -4395,9 +4408,8 @@ a {
 	}
 }
 
-.content-layout {
-	max-width: 1560px;
-	margin: 0 auto;
+.site__content {
+	margin-bottom: 60px;
 }
 
 .content-layout .breadcrumb {
@@ -4405,13 +4417,10 @@ a {
 	margin-bottom: 40px;
 }
 
-.content-layout .current__giveaway {
-	margin: 0 auto;
-}
-
 .content-layout .content-layout__btn {
 	margin: 0 auto;
 	margin-top: 31px;
+	width: 300px;
 }
 
 .return {
@@ -4443,11 +4452,10 @@ a {
 	-ms-flex-pack: center;
 	justify-content: center;
 	background-color: #7052AD;
-	max-width: 1560px;
 }
 
 .current__giveaway .current__giveaway-title {
-	margin-top: 64px;
+	margin-top: 30px;
 }
 
 .content-layout__btn {
@@ -4480,19 +4488,14 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-}
-
-.current__giveaway-info .left-side {
-	padding-left: 30px;
-	margin-top: 64px;
-	margin-bottom: 64px;
+	padding: 20px;
+	padding-bottom: 30px;
 }
 
 .current__giveaway-info .item-card {
-	margin-top: 64px;
-	margin-bottom: 64px;
 	margin-left: 106px;
 	padding-right: 30px;
+	margin-top: 30px;
 }
 
 .left-side {
@@ -4506,7 +4509,7 @@ a {
 }
 
 .left-side .current__giveaway-title {
-	margin-bottom: 63px;
+	margin-bottom: 25px;
 }
 
 .left-side .current__giveaway-desc {
@@ -4515,6 +4518,7 @@ a {
 
 .left-side .current__giveaway-timer {
 	margin-bottom: 20px;
+	padding-left: 10px;
 }
 
 .left-side .table {
@@ -4529,10 +4533,10 @@ a {
 }
 
 .current__giveaway-title-mob-version {
-	font-size: 40px;
+	font-size: 36px;
 	color: white;
 	font-family: "Montserrat", sans-serif;
-	font-weight: bolder;
+	font-weight: 800;
 	display: none;
 }
 
@@ -4548,7 +4552,7 @@ a {
 }
 
 .current__giveaway-timer {
-	font-size: 200px;
+	font-size: 150px;
 	color: white;
 	font-family: "Montserrat", sans-serif;
 }
@@ -4703,30 +4707,33 @@ a {
 	-ms-flex-align: end;
 	align-items: flex-end;
 	position: relative;
-	width: 503.15px;
-	height: 681.19px;
+	width: 450.15px;
+	height: 575.19px;
 	background-color: #4E3286;
 	border: 10px solid #A374E8;
 	border-radius: 22px;
 	z-index: 2;
+
+
 }
 
 .card-item__face .card-item__face-text {
 	position: absolute;
-	top: 46.44px;
-	left: 42.57px;
+	top: 25.44px;
+	left: 25.57px;
 }
 
 .card-item__face .card-item__character {
 	position: absolute;
-	right: 0px;
-	bottom: 129.19px;
+	bottom: 118.19px;
+	width: 370px;
 }
 
 .card-item__face .elipse-bg {
 	position: absolute;
 	right: 51.94px;
-	bottom: 129.66px;
+	bottom: 115.66px;
+	width: 320px;
 }
 
 .card-item__face .card-item__buy-btn {
@@ -4734,7 +4741,7 @@ a {
 }
 
 .card-item__face-text {
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 800;
@@ -4766,8 +4773,8 @@ a {
 }
 
 .card-item__bg {
-	width: 503.15px;
-	height: 681.19px;
+	width: 450.15px;
+	height: 570.19px;
 	background-color: #4E3286;
 	border-radius: 22px;
 	z-index: 1;
@@ -4775,7 +4782,6 @@ a {
 
 @media (max-width: 1600px) {
 	.current__giveaway-info .item-card {
-		margin-top: 165px;
 		margin-left: 48px;
 	}
 
@@ -4827,17 +4833,15 @@ a {
 
 @media (max-width: 1280px) {
 	.current__giveaway .current__giveaway-title-mob-version {
-		margin-top: 64px;
+		margin-top: 30px;
 	}
 
 	.current__giveaway-title-mob-version {
 		display: -webkit-box;
 		display: -ms-flexbox;
-		display: flex;
-	}
-
-	.current__giveaway-info .item-card {
-		margin-top: 130px;
+		display: block;
+		margin-right: auto;
+		margin-left: 110px;
 	}
 
 	.current__giveaway-title {
@@ -4845,7 +4849,11 @@ a {
 	}
 
 	.current__giveaway-timer {
-		font-size: 130px;
+		font-size: 120px;
+	}
+
+	.current__giveaway-info {
+		padding-bottom: 50px;
 	}
 
 	.table {
@@ -4901,14 +4909,29 @@ a {
 @media (max-width: 1050px) {
 	.current__giveaway-title-mob-version {
 		font-size: 32px;
+		margin-left: 20px;
 	}
 
-	.left-side .current__giveaway-desc {
-		margin-top: 20px;
+	.current__giveaway-info {
+		padding-bottom: 0;
+		width: 100%;
+	}
+
+	.card-item__face .elipse-bg {
+		width: 190px;
 	}
 
 	.current__giveaway-info .item-card {
-		margin-top: 180px;
+		margin-top: 70px;
+		margin-left: auto;
+	}
+
+	.left-side {
+		align-items: center;
+	}
+
+	.current__giveaway-timer {
+		font-size: 90px;
 	}
 
 	.card-item__bg {
@@ -4923,7 +4946,8 @@ a {
 
 	.card-item__face .card-item__character {
 		bottom: 80px;
-		right: -10px;
+		right: 0;
+		width: 220px;
 	}
 
 	.card-item__face .elipse-bg {
@@ -4955,13 +4979,13 @@ a {
 	}
 
 	.current__giveaway-timer {
-		font-size: 100px;
+		font-size: 70px;
 	}
 }
 
 @media (max-width: 786px) {
 	.content-layout .current__giveaway {
-		margin-top: 134px;
+		margin-top: 40px;
 	}
 
 	.breadcrumb {
@@ -4972,13 +4996,22 @@ a {
 		font-size: 25px;
 	}
 
+	.card-item__face .card-item__character {
+		left: 12px;
+		width: 180px;
+	}
+
+	.current__giveaway-info .item-card {
+		padding-right: 0;
+	}
+
 	.current__giveaway-info .left-side {
 		margin-top: 20px;
 	}
 
 	.current__giveaway-info .item-card {
 		margin-top: 20px;
-		margin-left: 22px;
+		margin-left: auto;
 	}
 
 	.content-layout__btn {
@@ -4991,8 +5024,8 @@ a {
 		font-size: 25px;
 	}
 
-	.current__giveaway-desc {
-		font-size: 17px;
+	.card-item__buy-btn {
+		font-size: 16px;
 	}
 
 	.current__giveaway-timer {
@@ -5013,6 +5046,7 @@ a {
 
 	.table__right-side {
 		gap: 15px;
+		padding: 0px 26px;
 	}
 
 	.table__right-side .table__right-side__name {
@@ -5046,12 +5080,16 @@ a {
 	}
 
 	.card-item__bg {
-		width: 233.15px;
+		width: 220.15px;
 		height: 321.19px;
 	}
 
+	.card-item__face .elipse-bg {
+		right: 10px;
+	}
+
 	.card-item__face {
-		width: 233.15px;
+		width: 220.15px;
 		height: 321.19px;
 	}
 
@@ -5067,19 +5105,20 @@ a {
 
 @media (max-width: 560px) {
 	.content-layout .current__giveaway {
-		margin-top: 74px;
-	}
-
-	.current__giveaway-info .left-side {
-		padding-left: 20px;
-	}
-
-	.current__giveaway-info .item-card {
-		padding-right: 20px;
+		margin-top: 30px;
 	}
 
 	.left-side .table {
 		margin-bottom: 30px;
+	}
+
+	.current__giveaway-desc {
+		font-size: 20px;
+	}
+
+	.current__giveaway-info {
+		padding: 10px;
+		padding-bottom: 0;
 	}
 
 	.current__giveaway-title-mob-version {
@@ -5139,6 +5178,22 @@ a {
 
 	.card-item__face .card-item__character {
 		bottom: 62px;
+		width: 140px;
+		height: 150px;
+	}
+
+	.card-item__face .card-item__buy-btn {
+		font-size: 16px;
+	}
+
+	.current__giveaway-info .item-card {
+		margin-top: 0px;
+	}
+
+	.card-item__face .elipse-bg {
+		width: 130px;
+		right: 16px;
+		bottom: 52px;
 	}
 
 	.elipse-bg {
@@ -5162,16 +5217,55 @@ a {
 		font-size: 14px;
 	}
 
+	.left-side .table {
+		padding: 0 20px;
+	}
+
+	.card-item__face .card-item__character {
+		width: 90px;
+		height: 90px;
+	}
+
+	.left-side .table {
+		padding: 0px 10px;
+	}
+
+	.card-item__face .card-item__buy-btn {
+		font-size: 10px;
+	}
+
+	.card-item__face {
+		border: 6px solid #A374E8;
+	}
+
+	.item-card .card-item__bg {
+		left: -10px;
+		top: 8.29px;
+	}
+
+	.left-side .current__giveaway-timer {
+		margin-bottom: 12px;
+	}
+
 	.current__giveaway-info .left-side {
-		padding-left: 10px;
+		padding-left: 0;
 		margin-top: 10px;
 		margin-bottom: 0px;
 	}
 
 	.current__giveaway-info .item-card {
 		margin-top: 30px;
-		padding-right: 10.15px;
 		margin-bottom: 0px;
+		padding-right: 10px;
+	}
+
+	.current__giveaway-title-mob-version {
+		font-size: 14px;
+		margin-left: 10px;
+  }
+
+	.current__giveaway-info {
+		padding: 0px;
 	}
 
 	.current__giveaway-title {
@@ -5233,8 +5327,8 @@ a {
 	}
 
 	.card-item__face .card-item__face-text {
-		left: 5px;
-		top: 5px;
+		left: 10px;
+		top: 10px;
 	}
 
 	.card-item__face .elipse-bg {
