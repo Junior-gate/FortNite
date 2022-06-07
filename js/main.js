@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		// loop: true,]
 		pagination: {
 			el: '.popular-offers__pagination',
+			type: 'bullets',
+			clickable: true,
 		},
 
 
@@ -41,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		loop: true,
 		pagination: {
 			el: '.intro__info-pagination',
+			type: 'bullets',
+			clickable: true,
 		},
 		// breakpoints: {
 		//    319: {
