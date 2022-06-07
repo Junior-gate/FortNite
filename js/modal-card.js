@@ -8,7 +8,7 @@ document.querySelectorAll('.btn--form').forEach((elem) => {
         }
         else {
             temp[eTarget - 1].style.display = 'none'
-            temp[eTarget].style.display = 'flex'
+            temp[eTarget].style.display = 'block'
         }
     })
 })
