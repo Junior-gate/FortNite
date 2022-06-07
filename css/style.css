@@ -1663,6 +1663,10 @@ a {
 		margin-right: 5px;
 	}
 
+	.card__title {
+		margin-top: 0;
+	}
+
 	.footer {
 		padding: 17px 0 30px;
 	}
