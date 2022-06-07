@@ -5,7 +5,6 @@ let timer = {
 }
 
 function letsgooo() {
-	console.log(timer)
 	setTimeout(() => {
 		console.log('s')
 		if (timer.seconds !== 0) {

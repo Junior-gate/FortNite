@@ -202,22 +202,17 @@ body {
 	left: 0;
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
-	background-image: url(".././images/icons/Arrow-prev.svg");
+	background-image: url("../images/icons/Arrow-prev.svg");
 	background-repeat: no-repeat;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
 }
 
+
 .btn-prev-page:hover::before {
 	-webkit-transform: translate(5px, -50%);
 	transform: translate(5px, -50%);
 }
-
-.hours {}
-
-.minutes {}
-
-.seconds {}
 
 .intro__giveaway-time {
 	gap: 5px;
@@ -1870,7 +1865,7 @@ a {
 
 .intro__giveaway-info::before {
 	content: '';
-	background-image: url("/images/icons/circle.svg");
+	background-image: url("../images/icons/circle.svg");
 	background-repeat: no-repeat;
 	width: 60px;
 	height: 60px;
@@ -2279,7 +2274,7 @@ a {
 }
 
 .card-item__elipse {
-	background-image: url(/images/icons/elipse-bg.svg);
+	background-image: url("../images/icons/elipse-bg.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 0;
