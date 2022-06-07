@@ -1958,6 +1958,7 @@ a {
 }
 
 .catalog {
+	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
@@ -2582,11 +2583,7 @@ a {
 	}
 
 	.description {
-<<<<<<< HEAD
 		padding-bottom: 60px;
-=======
-		padding-bottom: 80px;
->>>>>>> 6e7171e38a9eba67df6397cd6bac63b50e0bad02
 	}
 }
 
