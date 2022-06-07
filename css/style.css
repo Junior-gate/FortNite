@@ -1275,10 +1275,10 @@ a {
 	}
 
 	.card__sale {
-		height: 50px;
+		height: 40px;
 		margin-top: 0;
-		font-size: 24px;
-		max-width: 100px;
+		font-size: 20px;
+		max-width: 80px;
 		width: 100%;
 	}
 }
@@ -1659,7 +1659,7 @@ a {
 	}
 
 	.card__title {
-		font-size: 24px;
+		font-size: 20px;
 		margin-right: 5px;
 	}
 
@@ -1706,6 +1706,10 @@ a {
 
 	.article__text span {
 		display: none;
+	}
+	.card__title {
+		font-size: 16px;
+		line-height: 1.2;
 	}
 }
 
