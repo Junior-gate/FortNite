@@ -1270,7 +1270,16 @@ a {
 
 @media (max-width: 1480px) {
 	.card__title {
-		font-size: 60px;
+		font-size: 40px;
+		margin-right: 10px;
+	}
+
+	.card__sale {
+		height: 50px;
+		margin-top: 0;
+		font-size: 24px;
+		max-width: 100px;
+		width: 100%;
 	}
 }
 
@@ -1292,6 +1301,7 @@ a {
 
 	.card__title {
 		margin-right: 30px;
+
 	}
 
 	.card__img {
@@ -1461,6 +1471,7 @@ a {
 		margin-bottom: 15px;
 	}
 
+
 	.card__sale {
 		width: 60px;
 		height: 22px;
@@ -1616,7 +1627,7 @@ a {
 	.card__title {
 		max-width: 500px;
 		font-size: 30px;
-		margin-right: 0;
+		margin-right: 15px;
 	}
 }
 
@@ -1648,7 +1659,8 @@ a {
 	}
 
 	.card__title {
-		font-size: 36px;
+		font-size: 24px;
+		margin-right: 5px;
 	}
 
 	.footer {
