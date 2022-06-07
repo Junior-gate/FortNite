@@ -5,6 +5,9 @@ var x = setInterval(function () {
 
 	// Get today's date and time
 	var now = new Date().getTime();
+	// var now = 1232141242145;
+	console.log(now);
+	
 
 	// Find the distance between now and the count down date
 	var distance = countDownDate - now;

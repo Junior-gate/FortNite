@@ -2120,6 +2120,7 @@ a {
 
 .catalog__btn,
 .catalog__btn-anchor {
+
 	display: block;
 	width: 466px;
 	height: 55px;
@@ -2130,6 +2131,13 @@ a {
 	font-size: 30px;
 	-webkit-transition: all .3s;
 	transition: all .3s;
+}
+
+.catalog__btn-anchor {
+	position: fixed;
+	z-index: 3;
+	bottom: 20px;
+	right: 20px;
 }
 
 .catalog__btn:hover,
