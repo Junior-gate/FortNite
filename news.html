@@ -20,9 +20,9 @@
 					</a>
 				</div>
 				<ul class="header__menu">
-					<li class="header__link header__link--active"><a href="./index.html">Главная</a></li>
+					<li class="header__link "><a href="./index.html">Главная</a></li>
 					<li class="header__link"><a href="./guarantees.html">Гарантии</a></li>
-					<li class="header__link"><a href="./news.html">Новости</a></li>
+					<li class="header__link header__link--active"><a href="./news.html">Новости</a></li>
 					<li class="header__link"><a href="./reviews.html">Отзывы</a></li>
 				</ul>
 				<div class="header__btns">
@@ -65,16 +65,18 @@
 
 	</header>
 	<main class="news__main main">
-
-		<div class="container">
-			<nav aria-label="Breadcrumb" class="breadcrumb">
-				<ul class="breadcrumb__list">
-					<li class="breadcrumb__link"><a href="#">Главная</a></li>
-					<li class="breadcrumb__link breadcrumb__link--current"><span aria-current="page">Новости</span></li>
-				</ul>
-				<a class="btn-prev-page">Назад </a>
-			</nav>
-		</div>
+		<section class="breadcrumbs">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ul class="breadcrumb__list">
+						<li class="breadcrumb__link"><a href="./index.html">Главная</a></li>
+						<li class="breadcrumb__link breadcrumb__link--current"><span aria-current="page">Новости</span>
+						</li>
+					</ul>
+					<a href="./index.html" class="btn-prev-page">Назад </a>
+				</nav>
+			</div>
+		</section>
 
 		<section class="news__articles news-articles">
 			<div class="news-articles__container container">
@@ -86,7 +88,8 @@
 						<a href="#!">
 							<div class="article__img">
 								<picture>
-									<source srcset="./images/news-articles/article-1-mob.jpg" media="(max-width: 1600px)">
+									<source srcset="./images/news-articles/article-1-mob.jpg"
+										media="(max-width: 1600px)">
 									<img src="./images/news-articles/article-1.jpg" alt="articel-1">
 								</picture>
 							</div>
@@ -139,37 +142,38 @@
 	</main>
 	<footer class="footer">
 		<div class="container">
-		   <div class="footer__inner">
-			  <div class="footer__info">
-				 <a class="logo" href="/">
-					<img class="logo__img" src="./images/icons/logo.svg" alt="logo">
-				 </a>
-				 <p class="footer__text">Премиум магазин скинов Fortnite</p>
-				 <a class="footer__political-link" href="#">
-					<span>Политика конфиденциальности</span>
-				 </a>
-				 <a class="footer__agreement-link" href="#">
-					<span>Пользовательское соглашение</span>
-				 </a>
-			  </div>
-  
-			  <div class="footer__payment">
-				 <p class="footer__payment-text">В данный момент доступны такие типы оплаты:</p>
-				 <div class="footer__payment-box">
-					<img class="footer__payment-img" src="./images/icons/perfect_money.svg" alt="perfect_money-icon">
-					<img class="footer__payment-img" src="./images/icons/qiwi-crypto.svg" alt="qiwi-crypto-icon">
-					<img class="footer__payment-img" src="./images/icons/yandex-money.svg" alt="yandex-money-icon">
-					<img class="footer__payment-img" src="./images/icons/visa.svg" alt="visa-icon">
-					<img class="footer__payment-img" src="./images/icons/mastercard.svg" alt="mastercard-icon">
-					<img class="footer__payment-img" src="./images/icons/payeer.svg" alt="payeer-icon">
-					<img class="footer__payment-img" src="./images/icons/mir.svg" alt="mir-icon">
-				 </div>
-			  </div>
-  
-		   </div>
+			<div class="footer__inner">
+				<div class="footer__info">
+					<a class="logo" href="/">
+						<img class="logo__img" src="./images/icons/logo.svg" alt="logo">
+					</a>
+					<p class="footer__text">Премиум магазин скинов Fortnite</p>
+					<a class="footer__political-link" href="#">
+						<span>Политика конфиденциальности</span>
+					</a>
+					<a class="footer__agreement-link" href="#">
+						<span>Пользовательское соглашение</span>
+					</a>
+				</div>
+
+				<div class="footer__payment">
+					<p class="footer__payment-text">В данный момент доступны такие типы оплаты:</p>
+					<div class="footer__payment-box">
+						<img class="footer__payment-img" src="./images/icons/perfect_money.svg"
+							alt="perfect_money-icon">
+						<img class="footer__payment-img" src="./images/icons/qiwi-crypto.svg" alt="qiwi-crypto-icon">
+						<img class="footer__payment-img" src="./images/icons/yandex-money.svg" alt="yandex-money-icon">
+						<img class="footer__payment-img" src="./images/icons/visa.svg" alt="visa-icon">
+						<img class="footer__payment-img" src="./images/icons/mastercard.svg" alt="mastercard-icon">
+						<img class="footer__payment-img" src="./images/icons/payeer.svg" alt="payeer-icon">
+						<img class="footer__payment-img" src="./images/icons/mir.svg" alt="mir-icon">
+					</div>
+				</div>
+
+			</div>
 		</div>
-	 </footer>
-	 <script src="js/header.js"></script>
+	</footer>
+	<script src="js/header.js"></script>
 </body>
 
 </html>
