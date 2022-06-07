@@ -6,15 +6,66 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>FortNite</title>
-   <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
 </head>
 
 <body>
+   <header class="header">
+		<div class="header__container container">
 
+			<div class="header__row">
+				<div class="header__logo">
+               <a href="./index.html">
+						<img src="images/icons//logo.svg" alt="logo" />
+					</a>
+				</div>
+				<ul class="header__menu">
+					<li class="header__link header__link--active"><a href="./index.html">Главная</a></li>
+					<li class="header__link"><a href="./guarantees.html">Гарантии</a></li>
+					<li class="header__link"><a href="./news.html">Новости</a></li>
+					<li class="header__link"><a href="./reviews.html">Отзывы</a></li>
+				</ul>
+				<div class="header__btns">
+					<a href="tel:" class="header__btn-call">
+						<img src="images/icons/call.svg" alt="phone ico">
+					</a>
+					<button class="header__btn-login">Войти</button>
+				</div>
+				<!-- NavBtn -->
+				<button class="nav-btn">
+					<span class="nav-btn-icon"></span>
+				</button>
+
+				<!-- MobNav -->
+				<div class="mobile-nav">
+					<div class="header__logo">
+						<img src="images/icons//logo.svg" alt="logo" />
+					</div>
+					<div class="mobile-nav__item">
+
+						<div class="header__btns">
+							<a href="tel:" class="header__btn-call">
+								<img src="images/icons/call.svg" alt="phone ico">
+							</a>
+							<button class="header__btn-login">Войти</button>
+						</div>
+
+						<ul>
+							<li class="header__link header__link--active"><a href="./index.html">Главная</a></li>
+							<li class="header__link"><a href="./guarantees.html">Гарантии</a></li>
+							<li class="header__link"><a href="./news/html">Новости</a></li>
+							<li class="header__link"><a href="./reviews.html">Отзывы</a></li>
+						</ul>
+
+					</div>
+				</div>
+				<!-- //MobNav -->
+			</div>
+		</div>
+
+	</header>
    <section class="breadcrumbs">
       <div class="container">
          <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -88,7 +139,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">Джон Уик</p>
                            <div class="card-item__img">
-                              <img src="/images/product-characters/John-Wick.png" alt="john-wick">
+                              <img src="./images/product-characters/John-Wick.png" alt="john-wick">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -101,7 +152,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">Какаши</p>
                            <div class="card-item__img">
-                              <img src="/images/product-characters/kakashi.png" alt="kakashi">
+                              <img src="./images/product-characters/kakashi.png" alt="kakashi">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -114,7 +165,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">снегобой</p>
                            <div class="card-item__img">
-                              <img src="/images/product-characters/snowboy.png" alt="snow-boy">
+                              <img src="./images/product-characters/snowboy.png" alt="snow-boy">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -127,7 +178,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">в-баксы</p>
                            <div class="card-item__img small-img">
-                              <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                              <img src="./images/product-characters/b-cash.png" alt="b-cash">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -140,7 +191,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">в-баксы</p>
                            <div class="card-item__img small-img">
-                              <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                              <img src="./images/product-characters/b-cash.png" alt="b-cash">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -153,7 +204,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">Джон Уик</p>
                            <div class="card-item__img">
-                              <img src="/images/product-characters/John-Wick.png" alt="john-wick">
+                              <img src="./images/product-characters/John-Wick.png" alt="john-wick">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -166,7 +217,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">Какаши</p>
                            <div class="card-item__img">
-                              <img src="/images/product-characters/kakashi.png" alt="kakashi">
+                              <img src="./images/product-characters/kakashi.png" alt="kakashi">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -179,7 +230,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">снегобой</p>
                            <div class="card-item__img">
-                              <img src="/images/product-characters/snowboy.png" alt="snow-boy">
+                              <img src="./images/product-characters/snowboy.png" alt="snow-boy">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -192,7 +243,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">в-баксы</p>
                            <div class="card-item__img small-img">
-                              <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                              <img src="./images/product-characters/b-cash.png" alt="b-cash">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -205,7 +256,7 @@
                            <div class="card-item__elipse"></div>
                            <p class="card-item__name">в-баксы</p>
                            <div class="card-item__img small-img">
-                              <img src="/images/product-characters/b-cash.png" alt="b-cash">
+                              <img src="./images/product-characters/b-cash.png" alt="b-cash">
                            </div>
                            <p class="card-item__price">599 р</p>
                         </div>
@@ -220,15 +271,12 @@
          </div>
       </div>
    </section>
-
-
-
    <footer class="footer">
       <div class="container">
          <div class="footer__inner">
             <div class="footer__info">
-               <a class="logo" href="#">
-                  <img class="logo__img" src="/images/icons/logo.svg" alt="logo">
+               <a class="logo" href="/">
+                  <img class="logo__img" src="./images/icons/logo.svg" alt="logo">
                </a>
                <p class="footer__text">Премиум магазин скинов Fortnite</p>
                <a class="footer__political-link" href="#">
@@ -242,24 +290,22 @@
             <div class="footer__payment">
                <p class="footer__payment-text">В данный момент доступны такие типы оплаты:</p>
                <div class="footer__payment-box">
-                  <img class="footer__payment-img" src="/images/icons/perfect_money.svg" alt="perfect_money-icon">
-                  <img class="footer__payment-img" src="/images/icons/qiwi-crypto.svg" alt="qiwi-crypto-icon">
-                  <img class="footer__payment-img" src="/images/icons/yandex-money.svg" alt="yandex-money-icon">
-                  <img class="footer__payment-img" src="/images/icons/visa.svg" alt="visa-icon">
-                  <img class="footer__payment-img" src="/images/icons/mastercard.svg" alt="mastercard-icon">
-                  <img class="footer__payment-img" src="/images/icons/payeer.svg" alt="payeer-icon">
-                  <img class="footer__payment-img" src="/images/icons/mir.svg" alt="mir-icon">
+                  <img class="footer__payment-img" src="./images/icons/perfect_money.svg" alt="perfect_money-icon">
+                  <img class="footer__payment-img" src="./images/icons/qiwi-crypto.svg" alt="qiwi-crypto-icon">
+                  <img class="footer__payment-img" src="./images/icons/yandex-money.svg" alt="yandex-money-icon">
+                  <img class="footer__payment-img" src="./images/icons/visa.svg" alt="visa-icon">
+                  <img class="footer__payment-img" src="./images/icons/mastercard.svg" alt="mastercard-icon">
+                  <img class="footer__payment-img" src="./images/icons/payeer.svg" alt="payeer-icon">
+                  <img class="footer__payment-img" src="./images/icons/mir.svg" alt="mir-icon">
                </div>
             </div>
 
          </div>
       </div>
    </footer>
-
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/main.js"></script>
-
-
+   <script src="js/header.js"></script>
 </body>
 
 </html>
