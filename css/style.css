@@ -213,6 +213,35 @@ body {
 	transform: translate(5px, -50%);
 }
 
+.hours {}
+
+.minutes {}
+
+.seconds {}
+
+.intro__giveaway-time {
+	gap: 5px;
+}
+
+.intro__giveaway-time .hours,
+.intro__giveaway-time .minutes,
+.intro__giveaway-time .seconds {
+	width: 45px;
+	background-color: transparent;
+	font-size: 24px;
+	font-weight: 800;
+	color: #10021E;
+	font-size: 34px;
+	font-weight: 800;
+}
+
+.current__giveaway-timer .hours,
+.current__giveaway-timer .minutes,
+.current__giveaway-timer .seconds {
+	color: #fff;
+}
+
+
 /* global media */
 @media (max-width: 768px) {
 	.title {

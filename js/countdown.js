@@ -1,30 +1,33 @@
-var countDownDate = new Date("June 7, 2022 16:44:21").getTime();
+let timer = {
+	hours: Number(document.querySelector('.hours').innerHTML.replace(/0/, '')),
+	minutes: Number(document.querySelector('.minutes').innerHTML.replace(/0/, '')),
+	seconds: Number(document.querySelector('.seconds').innerHTML.replace(/0/, ''))
+}
 
-// Update the count down every 1 second
-var x = setInterval(function () {
+function letsgooo() {
+	console.log(timer)
+	setTimeout(() => {
+		console.log('s')
+		if (timer.seconds !== 0) {
+			timer.seconds = timer.seconds - 1
+		} else if (timer.minutes !== 0) {
+			timer.minutes = timer.minutes - 1
+			timer.seconds = 59
+		} else if (timer.hours !== 0) {
+			timer.hours = timer.hours - 1
+			timer.minutes = 59
+			timer.seconds = 59
+		} else {
+			return
+		}
+		sendTimerValue()
+	}, 1000)
+}
+letsgooo()
 
-	// Get today's date and time
-	var now = new Date().getTime();
-	// var now = 1232141242145;
-	console.log(now);
-	
-
-	// Find the distance between now and the count down date
-	var distance = countDownDate - now;
-
-	// Time calculations for days, hours, minutes and seconds
-	// var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-	// Output the result in an element with id="demo"
-	document.getElementById("time").innerHTML = "0" + hours + ":" +
-		minutes + ":" + seconds;
-
-	// If the count down is over, write some text 
-	if (distance < 0) {
-		clearInterval(x);
-		document.getElementById("time").innerHTML = "EXPIRED";
-	}
-}, 1000);
+function sendTimerValue() {
+	document.querySelector('.hours').innerHTML = timer.hours < 10 ? "0" + timer.hours : timer.hours
+	document.querySelector('.minutes').innerHTML = timer.minutes < 10 ? "0" + timer.minutes : timer.minutes
+	document.querySelector('.seconds').innerHTML = timer.seconds < 10 ? "0" + timer.seconds : timer.seconds
+	letsgooo()
+}
