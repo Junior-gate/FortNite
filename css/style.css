@@ -4736,7 +4736,7 @@ a {
 	font-size: 190px;
 	line-height: 1;
 	color: #FFFFFF;
-	text-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+	text-shadow: 0px 10px 1px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
 }
 
