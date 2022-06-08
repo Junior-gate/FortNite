@@ -2180,7 +2180,7 @@ a {
 }
 
 .catalog__btn,
-.catalog__btn-anchor {
+.btn-anchor {
 
 	display: block;
 	width: 466px;
@@ -2195,7 +2195,7 @@ a {
 	transition: all .3s;
 }
 
-.catalog__btn-anchor {
+.btn-anchor {
 	position: fixed;
 	z-index: 3;
 	bottom: 20px;
@@ -2203,13 +2203,13 @@ a {
 }
 
 .catalog__btn:hover,
-.catalog__btn-anchor:hover {
+.btn-anchor:hover {
 	-webkit-box-shadow: 0px 0px 20px #65DFEA;
 	box-shadow: 0px 0px 20px #65DFEA;
 }
 
 .catalog__btn:active,
-.catalog__btn-anchor:active {
+.btn-anchor:active {
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
 }
@@ -2218,7 +2218,7 @@ a {
 	margin: 0 auto;
 }
 
-.catalog__btn-anchor {
+.btn-anchor {
 	width: 200px;
 	margin-left: auto;
 	margin-top: -60px;
@@ -2633,7 +2633,7 @@ a {
 		font-size: 16px;
 	}
 
-	.catalog__btn-anchor {
+	.btn-anchor {
 		width: 139px;
 		height: 39px;
 		font-size: 16px;
