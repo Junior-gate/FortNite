@@ -4744,6 +4744,7 @@ a {
 	display: flex;
 	border: 4px solid #65DFEA;
 	margin-bottom: 28px;
+	border-radius: 6px;
 }
 
 .giveaway__participants {
@@ -4875,8 +4876,8 @@ a {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	right: -40px;
-	top: -25px;
+	right: -30px;
+	top: -35px;
 }
 
 .card-giveaway__btn-buy:hover {
@@ -4920,8 +4921,8 @@ a {
 	}
 
 	.card-giveaway__img-pic {
-		right: -5%;
-		top: -2%;
+		right: 0%;
+		top: -9%;
 	}
 }
 
@@ -5002,7 +5003,13 @@ a {
 	}
 
 	.card-giveaway__img {
-		height: 300px;
+		width: 300px;
+		height: 250px;
+	}
+
+	.card-giveaway__img-pic {
+		right: -12%;
+		top: -9%;
 	}
 
 	.card-giveaway__btn-buy {
@@ -5074,8 +5081,13 @@ a {
 	}
 
 	.card-giveaway__img {
-		width: 250px;
-		height: 250px;
+		width: 220px;
+		height: 200px;
+	}
+
+	.card-giveaway__img-pic {
+		right: -10%;
+		top: -8%;
 	}
 }
 
@@ -5103,7 +5115,12 @@ a {
 
 	.card-giveaway__img {
 		width: 220px;
-		height: 160px;
+		height: 170px;
+	}
+
+	.card-giveaway__img-pic {
+		right: -5%;
+		top: -5%;
 	}
 
 	.giveaway__timer {
@@ -5303,7 +5320,7 @@ a {
 
 	.card-giveaway__img {
 		width: 130px;
-		height: 100px;
+		height: 90px;
 	}
 
 	.card-giveaway__btn-buy {
@@ -5314,6 +5331,7 @@ a {
 
 	.card-giveaway__img-pic {
 		right: 5%;
+		top: -10%;
 	}
 
 	.giveaway__item {
