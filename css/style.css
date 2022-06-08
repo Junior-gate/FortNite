@@ -3188,6 +3188,7 @@ a {
 	column-gap: 20px;
 }
 
+
 .participation__recent,
 .participation__howto {
 	max-width: 820px;
@@ -3198,7 +3199,20 @@ a {
 
 .participation__recent {
 	background: #7052AD;
-	padding: 21px 17px 43px 21px;
+	padding: 21px 17px 0px 21px;
+	overflow-y: hidden;
+}
+
+.participation__recent-container {
+	max-width: 720px;
+	width: 100%;
+	max-height: 536px;
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: 140px;
+	overflow-y: auto;
+	scroll-snap-type: mandatory;
+	scroll-behavior: smooth;
 }
 
 .participation__recent-title,
