@@ -5018,6 +5018,10 @@ a {
 		padding: 5px 15px;
 		height: 40px;
 	}
+
+	.giveaway__timer {
+		text-shadow: 0px 6px 1px rgba(0, 0, 0, 0.5);
+	}
 }
 
 @media (max-width:1024.99px) {
@@ -5126,6 +5130,7 @@ a {
 	.giveaway__timer {
 		max-width: 200px;
 		font-size: 42px;
+		text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
 	}
 
 	.giveaway__item:first-child {
@@ -5238,6 +5243,9 @@ a {
 		align-items: center;
 		flex-direction: column;
 	}
+	.giveaway__timer {
+		text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	}
 }
 
 @media (max-width:425px) {
@@ -5275,6 +5283,7 @@ a {
 	.giveaway__timer {
 		max-width: 130px;
 		font-size: 34px;
+			text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.5);
 	}
 
 	.giveaway__card {
