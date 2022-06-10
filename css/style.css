@@ -3716,7 +3716,7 @@ a {
 	}
 
 	.participation__howto-list+.participation__howto-list {
-		margin-top: 8px;
+		margin-top: 15px;
 	}
 
 	.participation__howto-num {
@@ -3724,7 +3724,7 @@ a {
 		width: 18px;
 		height: 18px;
 		font-size: 12px;
-		top: 0px;
+		top: -4px;
 	}
 
 	.participation__howto-img {
@@ -3733,7 +3733,7 @@ a {
 	}
 
 	.participation__howto-btn {
-		margin-top: 20px;
+		margin-top: 50px;
 		width: 167px;
 		font-size: 13px;
 	}
@@ -3741,11 +3741,11 @@ a {
 
 @media (max-width: 450px) {
 	.participation__howto-list {
-		max-width: 200px;
+		width: fit-content;
 	}
 
 	.participation__howto-share {
-		right: -70px;
+		right: -80px;
 	}
 
 	.participation__howto-stages {
@@ -3767,28 +3767,13 @@ a {
 	}
 
 	.participation__recent-item+.participation__recent-item {
-		margin-top: 8px;
+		margin-top: 15px;
 	}
 
 	.participation__recent-container {
 		max-height: 200px;
 	}
 }
-
-@media (max-width: 340px) {
-	.participation__howto-list {
-		max-width: 195px;
-	}
-
-	.participation__howto-share {
-		right: -25px;
-	}
-
-	.participation__howto-stages {
-		margin-bottom: -6px;
-	}
-}
-
 
 .btn--purple {
 	display: -webkit-box;
