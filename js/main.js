@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 	new Swiper('.popular-offers__slider', {
-		// loop: true,]
+		loop: true,
 		pagination: {
 			el: '.popular-offers__pagination',
 			type: 'bullets',
