@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fortnite.market</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -93,7 +94,7 @@
 						</div>
 						<!-- Rating -->
 						<div class="card__rating-container">
-							<div class="card__rating rating rating_set " data-ajax="true">
+							<!-- <div class="card__rating rating rating_set " data-ajax="true">
 								<div class="rating__body">
 									<div class="rating__active"></div>
 									<div class="rating__items">
@@ -105,8 +106,11 @@
 									</div>
 								</div>
 								<div class="rating__value">3.6</div>
+							</div> -->
 
-							</div>
+
+							<div id="rateYo" data-rateyo-half-star="true"></div>
+
 							<div class="rating__grade rating-grade">
 								<span class="rating-grade__counter">641</span>
 								<span>оценок</span>
@@ -314,13 +318,13 @@
 									<div class="payment-form-pay__row">
 										<label for="validy" class="payment-form-pay__validity">
 											<p>Срок действия карты</p>
-											<input class="payment-form__input" type="number" maxlength="5"
-												placeholder="13/25" id="validy">
+											<input class="payment-form__input" type="number" maxlength="5" placeholder="13/25"
+												id="validy">
 										</label>
 										<label for="CVV" class="payment-form-pay__cvc">
 											<p>CVC/CVV код</p>
-											<input class="payment-form__input" type="number" maxlength="3"
-												placeholder="CVC" id="CVV">
+											<input class="payment-form__input" type="number" maxlength="3" placeholder="CVC"
+												id="CVV">
 										</label>
 									</div>
 									<label for="email" class="payment-form-pay__email-sm">
@@ -380,8 +384,7 @@
 				<div class="footer__payment">
 					<p class="footer__payment-text">В данный момент доступны такие типы оплаты:</p>
 					<div class="footer__payment-box">
-						<img class="footer__payment-img" src="./images/icons/perfect_money.svg"
-							alt="perfect_money-icon">
+						<img class="footer__payment-img" src="./images/icons/perfect_money.svg" alt="perfect_money-icon">
 						<img class="footer__payment-img" src="./images/icons/qiwi-crypto.svg" alt="qiwi-crypto-icon">
 						<img class="footer__payment-img" src="./images/icons/yandex-money.svg" alt="yandex-money-icon">
 						<img class="footer__payment-img" src="./images/icons/visa.svg" alt="visa-icon">
@@ -398,8 +401,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.js"
 		integrity="sha512-qcwcAul7d7yUcoz3MmQABiaGDa+gVkaDWgZX6wEd/z3I6z62nQCDW3EqioQG+O+QlGCpxmJLdH5snh4IaDPiPA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/modal.js"></script>
 	<script src="js/modal-card.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 	<script src="js/rating.js"></script>
 	<script src="js/header.js"></script>
 	<script src="js/scroll-up.js"></script>
