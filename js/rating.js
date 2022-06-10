@@ -109,7 +109,6 @@ $(function () {
 	  rating: 3.5,
 	  readOnly: true,
 	  ratedFill: "#f9dc1c",
-	  
 	});
   
  });
