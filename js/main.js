@@ -100,6 +100,8 @@ initSelect(navigationSelect);
 
 
 
+// show more catalog btn// 
+
 const showMore = document.querySelector('.show-more');
 const catalogBtn = document.querySelector('.catalog__btn');
 const catalogLess = document.querySelector('.catalog__btn-less');
@@ -129,7 +131,7 @@ catalogLess.addEventListener('click', function () {
 		let startTime = null;
 
 		const ease = function (t, b, c, d) {
-			t /= d / 2;
+			t /= d / 1;
 			if (t < 1) return c / 2 * t * t + b;
 			t--;
 			return -c / 2 * (t * (t - 2) - 1) + b;
