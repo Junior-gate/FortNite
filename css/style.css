@@ -1809,6 +1809,9 @@ a {
 	position: absolute;
 	right: 15px;
 	bottom: 35px;
+	background: rgba(35, 34, 34, 0.3);
+	width: fit-content;
+	padding: 10px;
 }
 
 .intro__info-pagination {
@@ -2568,12 +2571,6 @@ a {
 		width: 30px;
 		font-size: 24px;
 	}
-
-	.intro__info-name {
-		background: rgba(35, 34, 34, 0.3);
-		width: fit-content;
-		padding: 10px;
-	}
 }
 
 @media (max-width: 992px) {
@@ -2817,7 +2814,8 @@ a {
 		gap: 30px 20px;
 	}
 
-	.catalog__btn {
+	.catalog__btn,
+	.catalog__btn-less {
 		width: 248px;
 		height: 39px;
 		font-size: 16px;
@@ -3368,6 +3366,7 @@ a {
 	display: flex;
 	-webkit-column-gap: 20px;
 	column-gap: 20px;
+	align-items: center;
 }
 
 
@@ -3513,6 +3512,7 @@ a {
 .participation__howto-btn {
 	display: block;
 	margin-left: auto;
+	margin-top: 40px;
 	width: 310px;
 	height: 50px;
 	text-align: center;
@@ -3657,6 +3657,7 @@ a {
 	}
 
 	.participation__howto-btn {
+		margin-top: 30px;
 		width: 200px;
 		height: 38px;
 		font-size: 16px;
@@ -3732,6 +3733,7 @@ a {
 	}
 
 	.participation__howto-btn {
+		margin-top: 20px;
 		width: 167px;
 		font-size: 13px;
 	}
@@ -4032,7 +4034,6 @@ a {
 	text-align: right;
 	color: #f9dc1c;
 }
-
 
 .payment-form-footer__link {
 	display: block;
