@@ -125,7 +125,7 @@ main {
 	width: -moz-fit-content;
 	width: fit-content;
 	font-weight: 800;
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 1.1;
 	padding-bottom: 9px;
 	border-bottom: 4px #65DFEA solid;
@@ -415,7 +415,7 @@ main {
 /* global media */
 @media (max-width: 768px) {
 	.title {
-		font-size: 36px;
+		font-size: 28px;
 	}
 
 	.breadcrumb {
@@ -1241,7 +1241,6 @@ a {
 
 
 .card-product {
-	margin-top: 36px;
 	padding-bottom: 67px;
 }
 
@@ -1305,7 +1304,7 @@ a {
 	font-weight: 800;
 	font-size: 22px;
 	line-height: 1.3;
-	margin-top: -100px;
+	margin-top: -5px;
 }
 
 .card__item {
@@ -1317,9 +1316,10 @@ a {
 .card__title {
 	max-width: 650px;
 	font-weight: 800;
-	font-size: 80px;
+	font-size: 40px;
 	line-height: 1.17;
 	text-transform: uppercase;
+	margin-right: 10px;
 }
 
 .card__text {
@@ -1332,8 +1332,8 @@ a {
 .card__promocode {
 	margin-bottom: 14px;
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 44px;
+	font-size: 32px;
+	line-height: 42px;
 	text-transform: uppercase;
 	color: #FFC19E;
 	text-shadow: 0px 0px 26px #FF7A00;
@@ -1386,7 +1386,7 @@ a {
 	bottom: 100px;
 	right: 50px;
 	font-weight: 800;
-	font-size: 36px;
+	font-size: 34px;
 	line-height: 37px;
 }
 
@@ -1951,7 +1951,7 @@ a {
 }
 
 .intro__info-title {
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 800;
 	margin-bottom: 16px;
 }
@@ -1978,7 +1978,7 @@ a {
 .intro__info-name {
 	color: #fff;
 	font-weight: 800;
-	font-size: 30px;
+	font-size: 24px;
 	position: absolute;
 	right: 15px;
 	bottom: 35px;
@@ -2034,14 +2034,14 @@ a {
 
 .intro__giveaway-title {
 	font-weight: 800;
-	font-size: 30px;
+	font-size: 24px;
 	margin-bottom: 30px;
 	text-transform: uppercase;
 }
 
 .intro__giveaway-info {
 	font-weight: 500;
-	font-size: 26px;
+	font-size: 24px;
 	padding-left: 45px;
 	position: relative;
 	text-transform: uppercase;
@@ -2056,7 +2056,7 @@ a {
 	display: block;
 	color: #F7CC34;
 	font-weight: 600;
-	font-size: 32px;
+	font-size: 26px;
 	text-transform: initial;
 	max-width: 390px;
 	width: 100%;
@@ -2087,7 +2087,7 @@ a {
 	border-radius: 4px;
 	-webkit-transition: all .3s;
 	transition: all .3s;
-	font-size: 26px;
+	font-size: 24px;
 	color: #FFF;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -2115,7 +2115,7 @@ a {
 	background: #65DFEA;
 	border-radius: 4px;
 	color: #10021E;
-	font-size: 34px;
+	font-size: 28px;
 	font-weight: 800;
 	margin-bottom: 18px;
 	position: absolute;
@@ -2377,7 +2377,7 @@ a {
 	text-transform: uppercase;
 	color: #FFF;
 	font-weight: 800;
-	font-size: 30px;
+	font-size: 26px;
 	-webkit-transition: all .3s;
 	transition: all .3s;
 }
@@ -2640,7 +2640,7 @@ a {
 
 	.intro__giveaway-time {
 		width: 200px;
-		font-size: 30px;
+		font-size: 24px;
 		top: 100px;
 	}
 
@@ -2702,7 +2702,7 @@ a {
 
 	.intro__giveaway-info span {
 		margin-top: 15px;
-		font-size: 24px;
+		font-size: 22px;
 	}
 
 	.intro__giveaway-img {
@@ -2798,7 +2798,7 @@ a {
 	}
 
 	.intro__info-text {
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 	}
 
 	.intro__giveaway {
@@ -3027,7 +3027,7 @@ a {
 	}
 
 	.intro__info-title {
-		font-size: 24px;
+		font-size: 20px;
 	}
 
 	.intro__info-text {
@@ -3056,7 +3056,7 @@ a {
 	}
 
 	.intro__giveaway-time {
-		font-size: 20px;
+		font-size: 18px;
 		height: 40px;
 	}
 
@@ -3082,7 +3082,7 @@ a {
 .reviews__title {
 	margin-bottom: 5px;
 	font-weight: 800;
-	font-size: 50px;
+	font-size: 30px;
 }
 
 .reviews__row {
@@ -3323,7 +3323,7 @@ a {
 	}
 
 	.reviews__title {
-		font-size: 30px;
+		font-size: 26px;
 		margin-bottom: 10px;
 	}
 
@@ -3470,7 +3470,7 @@ a {
 
 @media (max-width: 340px) {
 	.reviews__title {
-		font-size: 24px;
+		font-size: 20px;
 		margin-bottom: 9px;
 	}
 
@@ -3572,7 +3572,7 @@ a {
 .participation__recent-title,
 .participation__howto-title {
 	font-weight: 800;
-	font-size: 40px;
+	font-size: 32px;
 	margin-bottom: 26px;
 }
 
@@ -3731,7 +3731,7 @@ a {
 
 	.participation__recent-title,
 	.participation__howto-title {
-		font-size: 40px;
+		font-size: 30px;
 		margin-bottom: 15px;
 	}
 
@@ -5051,7 +5051,7 @@ a {
 
 .giveaway__title {
 	font-weight: 800;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .giveaway__subtitle {
@@ -5060,7 +5060,7 @@ a {
 	margin-top: 60px;
 	margin-bottom: 25px;
 	font-weight: 600;
-	font-size: 32px;
+	font-size: 30px;
 }
 
 .giveaway__subtitle::after {
@@ -5082,7 +5082,7 @@ a {
 	width: 100%;
 	height: 197px;
 	font-weight: 400;
-	font-size: 190px;
+	font-size: 150px;
 	line-height: 1;
 	color: #FFFFFF;
 	text-shadow: 0px 10px 1px rgba(0, 0, 0, 0.5);
@@ -5142,7 +5142,7 @@ a {
 
 .participants__amount {
 	font-weight: 600;
-	font-size: 64px;
+	font-size: 52px;
 }
 
 .yesterday-winner {
@@ -5193,7 +5193,7 @@ a {
 
 .card-giveaway__title {
 	font-weight: 800;
-	font-size: 40px;
+	font-size: 32px;
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
@@ -5244,7 +5244,7 @@ a {
 	}
 
 	.giveaway__title {
-		font-size: 36px;
+		font-size: 28px;
 	}
 
 	.giveaway__subtitle {
@@ -5253,7 +5253,7 @@ a {
 	}
 
 	.giveaway__timer {
-		font-size: 160px;
+		font-size: 130px;
 	}
 
 	.participants {
@@ -5281,7 +5281,7 @@ a {
 	}
 
 	.giveaway__title {
-		font-size: 28px;
+		font-size: 26px;
 	}
 
 	.giveaway__subtitle {
@@ -5333,7 +5333,7 @@ a {
 
 @media (max-width:1140px) {
 	.giveaway__title {
-		margin-bottom: 25px;
+		margin-bottom: 24px;
 	}
 
 	.card-giveaway {
@@ -5394,7 +5394,7 @@ a {
 	.giveaway__timer {
 		height: 100%;
 		margin-bottom: 15px;
-		font-size: 82px;
+		font-size: 80px;
 	}
 
 	.giveaway__item-border {
@@ -5765,7 +5765,7 @@ a {
 /* //scrollbar custom */
 .privacy-policy__title-h1 {
 	margin-bottom: 40px;
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: 800;
 	text-transform: uppercase;
 }
