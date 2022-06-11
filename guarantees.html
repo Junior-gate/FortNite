@@ -32,7 +32,7 @@
 					<a href="tel:" class="header__btn-call">
 						<img src="./images/icons/call.svg" alt="phone ico">
 					</a>
-					<button class="header__btn-login">Войти</button>
+					<button class="header__btn-login" data-micromodal-trigger="login-modal">Войти</button>
 				</div>
 				<!-- NavBtn -->
 				<button class="nav-btn">
@@ -68,6 +68,47 @@
 		</div>
 
 	</header>
+
+
+		<!-- MODAL LOGIN-FORM -->
+		<section class="login-modal">
+			<div class="modal micromodal-slide" id="login-modal" aria-hidden="true">
+				<div class="modal__overlay" tabindex="-1" data-custom-close="login-modal">
+					<div class="modal__container" role="dialog" aria-modal="true">
+						<form class="login-modal__form login-form">
+							<h2 class="login-modal__title">Войти</h2>
+	
+							<label class="login-form__label" for="username">Ваша почта</label>
+							<input class="login-form__input" type="text" id="username" name="username"
+								placeholder="example@gmail.com">
+	
+							<label class="login-form__label" for="password">Ваш пароль</label>
+							<input class="login-form__input" type="text" id="password" name="пароль" placeholder=" пароль">
+							<a class="login-form__forgot-password" href="#!">Забыли пароль?</a>
+							<div class="modal__footer">
+								<button type="submit" class="login-form__submit">Войти</button>
+	
+								<p class="login-form__text">Или войдите используя:</p>
+								<div class="login-form__row">
+									<a class="login-form__link-auth" href="#!">
+										<img src="./images/google.png" alt="google ico auth">
+									</a>
+									<a class="login-form__link-auth" href="#!">
+										<img src="./images/vk.png" alt="vk ico auth">
+									</a>
+									<a class="login-form__link-auth" href="#!">
+										<img src="./images/facebook.png" alt="facebook ico auth">
+									</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //MODAL LOGIN-FORM -->
+	
+
 
 
 	<main id="scrollUp">
@@ -312,6 +353,10 @@
 	<script src="js/header.js"></script>
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.4.10/micromodal.min.js"
+		integrity="sha512-qcwcAul7d7yUcoz3MmQABiaGDa+gVkaDWgZX6wEd/z3I6z62nQCDW3EqioQG+O+QlGCpxmJLdH5snh4IaDPiPA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/modal.js"></script>
 	<script src="js/scroll-up.js"></script>
 
 </body>
