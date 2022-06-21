@@ -3027,7 +3027,8 @@ a {
 	}
 
 	.intro__giveaway-img {
-		display: none;
+		width: 140px;
+		height: 130px;
 	}
 
 	.intro__info-title {
@@ -3061,15 +3062,23 @@ a {
 
 	.intro__giveaway-time {
 		font-size: 18px;
-		height: 40px;
+		height: 30px;
 	}
 
-	.intro__giveaway-timer {
-		margin: 0 auto 20px;
+	.intro__giveaway-time,
+	.intro__giveaway-btn {
+		width: 130px;
 	}
 
 	.intro__giveaway-btn {
 		margin-bottom: 0;
+		font-size: 12px;
+	}
+
+	.intro__giveaway-time .hours,
+	.intro__giveaway-time .minutes,
+	.intro__giveaway-time .seconds {
+		width: 20px;
 		font-size: 16px;
 	}
 
