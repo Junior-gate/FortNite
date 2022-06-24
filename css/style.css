@@ -850,7 +850,12 @@ main {
 }
 
 .header__logo {
-	max-width: 250px;
+	max-width: 300px;
+	max-height: 50px;
+}
+
+.header__logo img {
+	max-height: 50px;
 }
 
 .header__menu {
@@ -1213,6 +1218,7 @@ a {
 
 	.header__logo img {
 		max-width: 300px;
+
 	}
 
 	.header__link {
@@ -1799,11 +1805,17 @@ a {
 }
 
 @media (max-width: 1600px) {
+	body {
+		padding-top: 40px;
+	}
+
 	.article {
 		-webkit-box-flex: 1;
 		-ms-flex: 1 1 45%;
 		flex: 1 1 45%;
 	}
+
+
 }
 
 @media (max-width: 1280px) {
@@ -1961,12 +1973,12 @@ a {
 .intro__info-title {
 	font-size: 32px;
 	font-weight: 800;
-	margin-bottom: 16px;
+	margin-bottom: 10px;
 }
 
 .intro__info-text {
 	font-weight: 500;
-	margin-bottom: 27px;
+	margin-bottom: 25px;
 }
 
 .intro__info-slide {
@@ -2641,6 +2653,16 @@ a {
 
 	.catalog__menu {
 		display: block;
+	}
+
+	.intro__giveaway {
+		max-width: 700px;
+		height: 470px;
+		padding: 15px 15px 0 20px;
+	}
+
+	.intro__giveaway-info+p {
+		margin-top: 50px;
 	}
 }
 
